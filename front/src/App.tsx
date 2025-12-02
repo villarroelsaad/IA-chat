@@ -51,13 +51,13 @@ function App() {
       const res = await uploadFile(file)
       if (res && res.ok) {
         setUploadedFiles((s) => [...s, res.filename || file.name])
-        setMessages((m) => [...m, { role: 'system', text: `Archivo cargado: ${res.filename || file.name}` }])
+        setMessages((m) => [...m, { role: 'system', text: `File uploaded: ${res.filename || file.name}` }])
         alert(`File uploaded: ${res.filename || file.name}`)
       } else {
-        setMessages((m) => [...m, { role: 'system', text: `Error al subir: ${JSON.stringify(res)}` }])
+        setMessages((m) => [...m, { role: 'system', text: `Error uploading file: ${JSON.stringify(res)}` }])
       }
     } catch (err) {
-      setMessages((m) => [...m, { role: 'system', text: `Error de red al subir archivo` }])
+      setMessages((m) => [...m, { role: 'system', text: `Network error uploading file` }])
       console.error(err)
     } finally {
       setLoading(false)
