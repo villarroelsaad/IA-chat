@@ -157,11 +157,3 @@ Issues and PRs are welcome for improvements, additional tests, or fixes.
 - How do I point the frontend to a different backend? — Set `VITE_BACKEND_URL` in your environment or a `.env` file when starting Vite.
 
 ---
-
-## Author
-
-Project created by the repository owner. For questions or support, open an issue.
-
----
-
-If you'd like me to add a more detailed API reference, Postman examples, architecture diagrams, or a translation in a different format (e.g., combined bilingual README), tell me and I'll add it. ✅
