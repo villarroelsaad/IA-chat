@@ -31,7 +31,7 @@ def get_bot():
 BOT = get_bot()
 
 
-@app.route("/health", methods=["GET"])
+@app.route("/", methods=["GET"])
 def health():
     return jsonify({"status": "ok"})
 

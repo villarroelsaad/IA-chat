@@ -108,7 +108,7 @@ After building, the backend is typically at `http://localhost:8000` and the fron
 
 ## Main endpoints 🔌
 
-- `GET /health` — Health check, returns `{"status":"ok"}`.
+- `GET /` — Health check, returns `{"status":"ok"}`.
 - `POST /chat` — Send a user message (JSON `{"message": "..."}`) and receive `{"reply": "..."}`.
 - `POST /upload-file` — `multipart/form-data` with a `file` field to upload text (reads text from `.txt`, `.pdf`, `.docx` and stores it in memory for context). Returns `{"ok": true, "filename": "..."}`.
 
