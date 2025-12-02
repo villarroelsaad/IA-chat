@@ -1,0 +1,189 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.chat-window {
+  display: flex;
+  width: 65%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: #1a1a1a;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 1rem;
+  font-family:  Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  scrollbar-width: none; 
+
+}
+
+.msg_user {
+  width: auto;
+  border-radius: 10px 0px 15px 10px;
+  padding: 6px;
+  padding-right: 30px;
+  padding-left: 10px;
+  align-self: self-end;
+  text-align: right;
+  margin: 10px;
+  background-color: #333344;
+}
+
+.input-file {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+
+}
+
+.upload-file-buttom {
+  width: 40px;
+  height: 35px;
+  border: none;
+  border-radius: 100%;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s;
+}
+
+.upload-file-buttom:hover {
+  background-color: rgba(136, 136, 136, 0.5);
+
+}
+
+.uploaded-list {
+  background-color: transparent;
+}
+
+.msg_bot {
+  text-align: start;
+  margin: 10px;
+  width: auto;
+  border-radius: 20px;
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 30px;
+  margin: 10px;
+}
+
+.composer {
+  width: 60%;
+  gap: 2px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  background-color: linen;
+  align-items: center;
+  box-shadow: #888;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+  box-shadow: 0px 0px 40px 1px #242424;
+  border: 2px solid #333344;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 800px;
+}
+
+.chat {
+  padding: 1rem;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-chat {
+  width: 100%;
+  outline: #333344;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+}
+
+button {
+  width: 40px;
+  height: 35px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 100%;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s;
+}
+
+button:hover {
+  /* background-color: rgba(100, 108, 255, 0.5);*/
+  background-color: rgba(136, 136, 136, 0.5);
+
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Node
+node_modules/
+frontend/front/node_modules/
+/frontend/dist/
+
+# Docker
+*.log
+
+# IDE
+.vscode/
+.idea/
