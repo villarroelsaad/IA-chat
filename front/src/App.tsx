@@ -73,7 +73,7 @@ function App() {
       if (res && res.ok) {
         setUploadedFiles((s) => [...s, res.filename || file.name])
         // Mensaje del sistema local (opcional, ya que el bot hablará por el webhook)
-        setMessages((m) => [...m, { role: 'system', text: `Uploading: ${res.filename || file.name}...` }])
+        setMessages((m) => [...m, { role: 'system', text: `Uploading: ${res.filename || uploadedFiles}...` }])
       }
     } catch (err) {
       setMessages((m) => [...m, { role: 'system', text: `Network error uploading file` }])
