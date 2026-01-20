@@ -1,14 +1,13 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 .chat-window {
   display: flex;
   width: 65%;
-  height: 90%;
+  height: 70%;
   overflow: auto;
   box-shadow: #1a1a1a;
   flex-direction: column;
@@ -116,7 +115,7 @@
 }
 
 .chat {
-  padding: 1rem;
+  padding: 1px;
 
 }
 
@@ -187,3 +186,18 @@ button:hover {
 .read-the-docs {
   color: #888;
 }
+/* @keyframes colorChange {
+  0% {
+    background-color: #3b82f6;
+    /* Azul */
+/* } */
+
+/* 100% { */
+/* background-color: #8b5cf6; */
+/* Morado */
+/* }
+} */
+
+/* .load {
+  animation: colorChange 2s infinite alternate; */
+/* } */

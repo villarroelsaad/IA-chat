@@ -39,6 +39,9 @@ Notas
 - El modo fallback es intencionadamente simple y sirve para pruebas locales. No replica completamente las capacidades de un modelo grande.
 - Actualiza `requirements.txt` si instalas una biblioteca diferente para acceder a la API que planeas usar.
 
+Webhook
+- **WEBHOOK_URL**: Si quieres recibir notificaciones cuando se suba un archivo, configura la variable de entorno `WEBHOOK_URL` con la URL a la que el backend hará un POST JSON con `{ filename, status, text_snippet }`.
+
 Ejecución con Docker (backend + frontend)
 
 1. Construir y arrancar los servicios con docker-compose:

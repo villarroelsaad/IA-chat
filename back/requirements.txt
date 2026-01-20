@@ -6,3 +6,5 @@ flask-cors
 google-genai
 PyPDF2
 python-docx
+flask-socketio
+eventlet
